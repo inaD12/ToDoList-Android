@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/todoListRecyclerView"
+        android:backgroundTint="@color/design_default_color_background"
+        />
+    
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Task"
+        android:id="@+id/newTaskButton"
+        android:backgroundTint="@color/mainBlue"
+        android:textColor="@color/design_default_color_on_primary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        app:icon="@drawable/baseline_add_24"
+        app:iconTint="@color/design_default_color_on_primary"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/loguotButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newTaskButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#83AF1E1E"
+        android:layout_margin="20dp"
+        android:minWidth="50dp"
+        android:minHeight="48dp"
+        android:text="Log Out"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:iconTint="@color/black"
+        tools:layout_marginBottom="-2dp" />
+
+</RelativeLayout>
